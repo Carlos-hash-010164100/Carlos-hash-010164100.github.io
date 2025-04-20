@@ -7,13 +7,14 @@ body {
     background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
 }
 
-
-
 nav {
     width: 130px; /* Ancho fijo para la barra lateral */
     background-color: #607D8B; /* Azul grisáceo */
     height: 100vh; /* Ocupa todo el alto de la pantalla */
     padding: 20px;
+    position: fixed; /* Fija el nav para que permanezca en su lugar */
+    top: 0; /* Posiciona el `nav` en la parte superior */
+    left: 0; /* Posiciona el `nav` al lado izquierdo */
 }
 
 nav ul {
@@ -37,7 +38,8 @@ nav ul li a:hover {
 }
 
 .container {
-    flex-grow: 1; /* Ocupa el espacio restante al lado del `nav` */
+    margin-left: 150px; /* Deja espacio para el `nav` fijo */
+    flex-grow: 1; /* Ocupa el espacio restante */
     background: #fff;
     padding: 50px;
     border-radius: 20px;
@@ -45,7 +47,6 @@ nav ul li a:hover {
     max-width: 1400px; /* Ajusta el ancho máximo del contenedor */
     max-height: 90vh;
     overflow-y: auto;
-    margin: 20px auto;
 }
 
 h1 {
@@ -139,6 +140,7 @@ tbody tr:hover {
     nav {
         width: 100%; /* Haz que el `nav` ocupe todo el ancho */
         height: auto; /* Ajusta la altura automáticamente */
+        position: static; /* Vuelve el `nav` a la posición estándar */
         padding: 10px;
     }
 
@@ -147,6 +149,7 @@ tbody tr:hover {
     }
 
     .container {
+        margin-left: 0; /* Elimina el margen lateral en móviles */
         width: 90%; /* Ajusta el ancho del contenedor */
         margin: 10px auto;
         padding: 20px; /* Reduce el padding en móviles */
@@ -162,3 +165,4 @@ tbody tr:hover {
         white-space: nowrap; /* Evita el ajuste en líneas múltiples */
     }
 }
+
