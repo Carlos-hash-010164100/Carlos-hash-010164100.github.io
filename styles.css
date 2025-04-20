@@ -1,13 +1,12 @@
 body {
     display: flex;
-    flex-wrap: wrap; /* Acomoda los elementos según el espacio */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     background: #215086ce; /* Fondo general */
 }
 
 nav {
-    width: 200px; /* Ancho normal para pantallas grandes */
+    width: 130px; /* Ancho ajustado para más espacio al contenedor */
     background-color: #607D8B; /* Azul grisáceo */
     height: 100vh;
     padding: 20px;
@@ -130,18 +129,18 @@ tbody tr:hover {
 /* --- Diseño responsivo para dispositivos móviles --- */
 @media (max-width: 768px) {
     nav {
-        width: 120px; /* Reduce el ancho en dispositivos móviles */
+        width: 130px; /* Mantén el ancho reducido en móviles */
         padding: 10px; /* Ajusta el espacio interno */
     }
 
     nav ul li a {
-        font-size: 14px; /* Tamaño ajustado para pantallas pequeñas */
+        font-size: 14px; /* Reduce el tamaño de la fuente para enlaces */
         text-align: center;
     }
 
     .container {
-        width: calc(100% - 140px); /* Hace espacio para la barra lateral */
-        padding: 20px; /* Ajusta el espacio interno */
+        width: calc(100% - 150px); /* Deja espacio para el `nav` */
+        padding: 20px; /* Ajusta el padding */
     }
 
     h1, h2 {
