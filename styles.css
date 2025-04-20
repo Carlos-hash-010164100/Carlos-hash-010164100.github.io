@@ -1,5 +1,5 @@
 body {
-    display: flex; /* Alinea los elementos horizontalmente */
+    display: flex;
     flex-direction: row; /* Mantén los hijos en una fila por defecto */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -11,9 +11,9 @@ nav {
     background-color: #607D8B; /* Azul grisáceo */
     height: 100vh; /* Ocupa todo el alto de la pantalla */
     padding: 20px;
-    position: fixed; /* Fija el nav al lado izquierdo */
-    top: 0; /* Posiciona el nav en la parte superior */
-    left: 0; /* Alinea el nav al lado izquierdo */
+    position: fixed; /* Fija el nav en pantalla */
+    top: 0;
+    left: 0;
 }
 
 nav ul {
@@ -37,7 +37,7 @@ nav ul li a:hover {
 }
 
 .container {
-    margin-left: 150px; /* Deja espacio para el nav fijo */
+    margin-left: 130px; /* Deja espacio para el nav fijo */
     flex-grow: 1; /* Ocupa el espacio restante */
     background: #fff;
     padding: 50px;
@@ -84,7 +84,7 @@ table {
     border-collapse: collapse; /* Elimina espacios entre bordes */
     margin: 20px 0;
     background-color: #fff;
-    font-size: 1em; /* Tamaño estándar para el texto */
+    font-size: 1em;
     text-align: left;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -111,22 +111,22 @@ tbody tr:hover {
 }
 
 .hover-image {
-    position: relative; /* Necesario para posicionar la imagen correctamente */
+    position: relative;
 }
 
 .hover-image img {
-    display: none; /* La imagen está oculta por defecto */
-    position: absolute; /* Permite que la imagen se superponga a otros elementos */
-    top: 50%; /* Ajusta la posición vertical */
-    left: 100%; /* Ajusta la posición horizontal */
-    transform: translate(-50%, -50%); /* Centra la imagen */
-    width: 200px; /* Tamaño de la imagen */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra alrededor de la imagen */
-    border-radius: 10px; /* Bordes redondeados para un diseño moderno */
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
 
 .hover-image:hover img {
-    display: block; /* Muestra la imagen al pasar el mouse */
+    display: block;
 }
 
 /* --- Diseño responsivo para móviles --- */
@@ -136,20 +136,20 @@ tbody tr:hover {
     }
 
     nav {
-        width: 100%; /* El nav ocupa todo el ancho */
-        height: auto; /* Ajusta la altura automáticamente */
-        position: static; /* Vuelve a su posición normal */
+        width: 100%; /* Haz que el nav ocupe todo el ancho */
+        height: auto;
+        position: static; /* Elimina la posición fija */
         padding: 10px;
     }
 
     .container {
-        margin-left: 0; /* Elimina el margen lateral */
+        margin-left: 0; /* Elimina el margen en móviles */
         width: 100%; /* El contenedor ocupa todo el ancho */
-        padding: 20px; /* Ajusta el padding */
+        padding: 20px;
     }
 
     nav ul li a {
-        font-size: 14px; /* Ajusta el tamaño de la fuente */
+        font-size: 14px;
     }
 
     h1, h2 {
