@@ -168,6 +168,9 @@ tbody tr:hover {
 }
 
 .imagencontenedor {
-    width: 600px;
-    height: 400px;
+    display: flex; /* Activar el uso de flexbox */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    width: 600px; /* Ancho del contenedor */
+    height: 400px; /* Altura del contenedor */
 }
