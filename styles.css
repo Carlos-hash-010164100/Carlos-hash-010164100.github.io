@@ -125,3 +125,37 @@ tbody tr:hover {
 .hover-image:hover img {
     display: block; /* Muestra la imagen al pasar el mouse */
 }
+
+/* --- Diseño responsivo para dispositivos móviles --- */
+@media (max-width: 768px) {
+    nav {
+        width: 100%; /* Haz que la barra de navegación ocupe toda la pantalla */
+        height: auto;
+    }
+    
+    nav ul {
+        display: flex;
+        flex-wrap: wrap; /* Ajusta los elementos de navegación */
+        justify-content: space-around;
+    }
+    
+    .container {
+        width: 95%; /* Reduce el ancho del contenedor */
+        padding: 20px; /* Ajusta el espacio interno */
+        font-size: 0.9em; /* Reduce el tamaño del texto */
+    }
+
+    h1, h2 {
+        font-size: 24px; /* Reduce los encabezados para móviles */
+    }
+
+    table {
+        font-size: 0.8em; /* Ajusta el texto de las tablas */
+    }
+
+    table {
+        display: block; /* Permite el desplazamiento */
+        overflow-x: auto; /* Habilita el scroll horizontal */
+        white-space: nowrap; /* Evita que el texto se ajuste en líneas múltiples */
+    }
+}
