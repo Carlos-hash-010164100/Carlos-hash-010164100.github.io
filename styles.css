@@ -1,94 +1,101 @@
+/* --- General Body Styling --- */
 body {
-    display: flex;
-    flex-direction: row; /* Mantén los hijos en una fila por defecto */
+    display: flex; /* Activar flexbox */
+    flex-direction: row; /* Mantén los hijos en una fila horizontal */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
+    margin: 0; /* Eliminar márgenes */
     background: #215086ce; /* Fondo general */
 }
 
+/* --- Navigation Styling --- */
 nav {
     width: 130px; /* Ancho fijo para la barra lateral */
     background-color: #607D8B; /* Azul grisáceo */
-    height: 100vh; /* Ocupa todo el alto de la pantalla */
-    padding: 20px;
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    padding: 20px; /* Espaciado interno */
     position: fixed; /* Fija el nav en pantalla */
     top: 0;
     left: 0;
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
+    list-style-type: none; /* Elimina viñetas */
+    padding: 0; /* Elimina padding */
 }
 
 nav ul li {
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Espaciado entre elementos */
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
+    color: white; /* Texto blanco */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Negrita */
+    font-size: 18px; /* Tamaño de fuente */
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Subrayado al pasar el cursor */
 }
 
+/* --- Main Container Styling --- */
 .container {
     margin-left: 130px; /* Deja espacio para el nav fijo */
     flex-grow: 1; /* Ocupa el espacio restante */
-    background: #fff;
-    padding: 50px;
-    border-radius: 20px;
-    box-shadow: 0 15px 30px rgba(5, 0, 0, 0.1);
-    max-width: 1400px; /* Ajusta el ancho máximo del contenedor */
-    max-height: 90vh;
-    overflow-y: auto;
+    background: #fff; /* Fondo blanco */
+    padding: 50px; /* Espaciado interno */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 15px 30px rgba(5, 0, 0, 0.1); /* Sombra */
+    max-width: 1400px; /* Ancho máximo */
+    max-height: 90vh; /* Altura máxima */
+    overflow-y: auto; /* Scroll para contenido desbordado */
 }
 
+/* --- Header Styling --- */
 h1 {
-    color: rgb(14, 15, 10);
-    font-size: 58px; /* Ajusta el tamaño */
-    text-align: center;
+    color: rgb(14, 15, 10); /* Color del texto */
+    font-size: 58px; /* Tamaño de fuente */
+    text-align: center; /* Centrar texto */
 }
 
 h2 {
-    color: rgb(14, 15, 10);
-    font-size: 34px; /* Ajusta el tamaño */
-    text-align: center;
+    color: rgb(14, 15, 10); /* Color del texto */
+    font-size: 34px; /* Tamaño de fuente */
+    text-align: center; /* Centrar texto */
 }
 
+/* --- Text and Links Styling --- */
 p {
-    font-size: 1.2em;
-    color: #333;
+    font-size: 1.2em; /* Tamaño de fuente */
+    color: #333; /* Color gris */
 }
 
 a {
-    color: #b12929; /* Enlace principal */
-    text-decoration: none;
+    color: #b12929; /* Color de enlace */
+    text-decoration: none; /* Sin subrayado */
 }
 
 a:hover {
-    color: #5a3c3c; /* Cambia el color al pasar el ratón */
-    text-decoration: underline;
+    color: #5a3c3c; /* Color de enlace al pasar el cursor */
+    text-decoration: underline; /* Subrayado al pasar el cursor */
 }
 
+/* --- List Styling --- */
 ul {
-    padding-left: 20px;
+    padding-left: 20px; /* Margen izquierdo para listas */
 }
 
+/* --- Table Styling --- */
 table {
-    width: 100%;
+    width: 100%; /* Ocupa el ancho completo */
     border-collapse: collapse; /* Elimina espacios entre bordes */
-    margin: 20px 0;
-    background-color: #fff;
-    font-size: 1em;
-    text-align: left;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
+    margin: 20px 0; /* Margen superior e inferior */
+    background-color: #fff; /* Fondo blanco */
+    font-size: 1em; /* Tamaño de fuente */
+    text-align: left; /* Alinear texto a la izquierda */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Esconder desbordes */
 }
 
 th, td {
@@ -98,8 +105,8 @@ th, td {
 
 th {
     background-color: #607D8B; /* Azul grisáceo */
-    color: white; /* Texto blanco para contraste */
-    font-weight: bold;
+    color: white; /* Texto blanco */
+    font-weight: bold; /* Negrita */
 }
 
 tbody tr:nth-child(even) {
@@ -107,72 +114,79 @@ tbody tr:nth-child(even) {
 }
 
 tbody tr:hover {
-    background-color: #e0e0e0; /* Fondo al pasar el ratón por encima */
+    background-color: #e0e0e0; /* Fondo al pasar el ratón */
 }
 
+/* --- Image Hover Styling --- */
 .hover-image {
-    position: relative;
+    position: relative; /* Posición relativa */
 }
 
 .hover-image img {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 100%;
-    transform: translate(-50%, -50%);
-    width: 200px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
+    display: none; /* Ocultar imagen inicial */
+    position: absolute; /* Posicionamiento absoluto */
+    top: 50%; /* Centrar verticalmente */
+    left: 100%; /* Posición a la derecha */
+    transform: translate(-50%, -50%); /* Ajuste fino de la posición */
+    width: 200px; /* Ancho fijo */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra */
+    border-radius: 10px; /* Bordes redondeados */
 }
 
 .hover-image:hover img {
-    display: block;
+    display: block; /* Mostrar imagen al pasar el cursor */
 }
 
-/* --- Diseño responsivo para móviles --- */
-@media (max-width: 768px) {
-    body {
-        flex-direction: column; /* Cambia a disposición vertical en móviles */
-    }
-
-    nav {
-        width: 100%; /* Haz que el nav ocupe todo el ancho */
-        height: auto;
-        position: static; /* Elimina la posición fija */
-        padding: 10px;
-    }
-
-    .container {
-        margin-left: 0; /* Elimina el margen en móviles */
-        width: 100%; /* El contenedor ocupa todo el ancho */
-        padding: 20px;
-    }
-
-    nav ul li a {
-        font-size: 14px;
-    }
-
-    h1, h2 {
-        font-size: 24px;
-    }
-
-    table {
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
-    }
-}
-
+/* --- Image Container Styling --- */
 .imagencontenedor {
-    display: flex; /* Activar el uso de flexbox */
+    display: flex; /* Activar flexbox */
     justify-content: center; /* Centrar horizontalmente */
     align-items: center; /* Centrar verticalmente */
     width: 600px; /* Ancho del contenedor */
     height: 400px; /* Altura del contenedor */
+    margin: 20px auto; /* Margen superior e inferior, centrado horizontal */
+    background-color: #fff; /* Fondo blanco del contenedor */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombra */
 }
 
 .imagencontenedor img {
-    max-width: 100%; /* Ajusta el tamaño de la imagen al contenedor */
-    height: auto; /* Mantiene las proporciones de la imagen */
+    max-width: 100%; /* Ajustar ancho de imagen al contenedor */
+    height: auto; /* Mantener proporciones */
+    display: block; /* Mostrar como bloque */
+}
+
+/* --- Responsive Design for Mobile Devices --- */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column; /* Disposición vertical en móviles */
+    }
+
+    nav {
+        width: 100%; /* Nav ocupa todo el ancho */
+        height: auto; /* Altura automática */
+        position: static; /* Posición normal */
+        padding: 10px; /* Espaciado interno */
+    }
+
+    .container {
+        margin-left: 0; /* Eliminar margen en móviles */
+        width: 100%; /* Ocupa todo el ancho */
+        padding: 20px; /* Espaciado interno */
+    }
+
+    nav ul li a {
+        font-size: 14px; /* Tamaño reducido */
+    }
+
+    h1, h2 {
+        font-size: 24px; /* Tamaño reducido */
+    }
+
+    table {
+        display: block; /* Cambiar a bloque para scroll horizontal */
+        overflow-x: auto; /* Habilitar scroll horizontal */
+        white-space: nowrap; /* Evitar que el texto se ajuste */
+    }
 }
 
