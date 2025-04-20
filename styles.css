@@ -1,12 +1,13 @@
 body {
     display: flex;
+    flex-wrap: wrap; /* Acomoda los elementos según el espacio */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     background: #215086ce; /* Fondo general */
 }
 
 nav {
-    width: 200px;
+    width: 200px; /* Ancho normal para pantallas grandes */
     background-color: #607D8B; /* Azul grisáceo */
     height: 100vh;
     padding: 20px;
@@ -129,33 +130,27 @@ tbody tr:hover {
 /* --- Diseño responsivo para dispositivos móviles --- */
 @media (max-width: 768px) {
     nav {
-        width: 100%; /* Haz que la barra de navegación ocupe toda la pantalla */
-        height: auto;
+        width: 120px; /* Reduce el ancho en dispositivos móviles */
+        padding: 10px; /* Ajusta el espacio interno */
     }
-    
-    nav ul {
-        display: flex;
-        flex-wrap: wrap; /* Ajusta los elementos de navegación */
-        justify-content: space-around;
+
+    nav ul li a {
+        font-size: 14px; /* Tamaño ajustado para pantallas pequeñas */
+        text-align: center;
     }
-    
+
     .container {
-        width: 95%; /* Reduce el ancho del contenedor */
+        width: calc(100% - 140px); /* Hace espacio para la barra lateral */
         padding: 20px; /* Ajusta el espacio interno */
-        font-size: 0.9em; /* Reduce el tamaño del texto */
     }
 
     h1, h2 {
-        font-size: 24px; /* Reduce los encabezados para móviles */
+        font-size: 24px; /* Ajusta el tamaño de los encabezados */
     }
 
     table {
-        font-size: 0.8em; /* Ajusta el texto de las tablas */
-    }
-
-    table {
-        display: block; /* Permite el desplazamiento */
-        overflow-x: auto; /* Habilita el scroll horizontal */
-        white-space: nowrap; /* Evita que el texto se ajuste en líneas múltiples */
+        display: block; /* Permite el desplazamiento horizontal */
+        overflow-x: auto; /* Habilita scroll horizontal */
+        white-space: nowrap; /* Evita el ajuste en líneas múltiples */
     }
 }
