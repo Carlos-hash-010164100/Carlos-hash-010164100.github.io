@@ -11,51 +11,6 @@ nav {
     background-color: #607D8B; /* Azul grisáceo */
     height: 100vh; /* Ocupa todo el alto de la pantalla */
     padding: 20px;
-    position: fixed; /* Fija el nav para que permanezca en su lugar */
-    top: 0; /* Posiciona el `nav` en la parte superior */
-    left: 0; /* Posiciona el `nav` al lado izquierdo */
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    margin-bottom: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-.container {
-    margin-left: 150px; /* Deja espacio para el `nav` fijo */
-    flex-grow: 1; /* Ocupa el espacio restante */
-    background: #fff;
-    padding: 50px;
-    border-radius: 20px;
-    box-shadow: 0 15px 30px rgba(5, 0, 0, 0.1);
-    max-width: 1400px; /* Ajusta el ancho máximo del contenedor *body {
-    display: flex; /* Alinea los elementos horizontalmente */
-    flex-direction: row; /* Mantén los hijos en una fila por defecto */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    background: #215086ce; /* Fondo general */
-}
-
-nav {
-    width: 130px; /* Ancho fijo para la barra lateral */
-    background-color: #607D8B; /* Azul grisáceo */
-    height: 100vh; /* Ocupa todo el alto de la pantalla */
-    padding: 20px;
 }
 
 nav ul {
