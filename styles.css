@@ -162,3 +162,12 @@ tbody tr:hover {
         white-space: nowrap;
     }
 }
+
+.image-container {
+    text-align: center; /* Centra la imagen horizontalmente */
+}
+
+.image-container img {
+    width: 600px;
+    height: 400px;
+}
