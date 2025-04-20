@@ -11,6 +11,9 @@ nav {
     background-color: #607D8B; /* Azul grisáceo */
     height: 100vh; /* Ocupa todo el alto de la pantalla */
     padding: 20px;
+    position: fixed; /* Fija el nav al lado izquierdo */
+    top: 0; /* Posiciona el nav en la parte superior */
+    left: 0; /* Alinea el nav al lado izquierdo */
 }
 
 nav ul {
@@ -34,7 +37,8 @@ nav ul li a:hover {
 }
 
 .container {
-    flex-grow: 1; /* Ocupa el espacio restante al lado del `nav` */
+    margin-left: 150px; /* Deja espacio para el nav fijo */
+    flex-grow: 1; /* Ocupa el espacio restante */
     background: #fff;
     padding: 50px;
     border-radius: 20px;
@@ -42,7 +46,6 @@ nav ul li a:hover {
     max-width: 1400px; /* Ajusta el ancho máximo del contenedor */
     max-height: 90vh;
     overflow-y: auto;
-    margin: 20px auto;
 }
 
 h1 {
@@ -79,12 +82,12 @@ ul {
 table {
     width: 100%;
     border-collapse: collapse; /* Elimina espacios entre bordes */
-    margin: 20px 0; /* Espaciado con otros elementos */
+    margin: 20px 0;
     background-color: #fff;
     font-size: 1em; /* Tamaño estándar para el texto */
     text-align: left;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Añade una sombra para destacar */
-    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
     overflow: hidden;
 }
 
@@ -96,7 +99,7 @@ th, td {
 th {
     background-color: #607D8B; /* Azul grisáceo */
     color: white; /* Texto blanco para contraste */
-    font-weight: bold; /* Texto en negrita */
+    font-weight: bold;
 }
 
 tbody tr:nth-child(even) {
@@ -107,7 +110,6 @@ tbody tr:hover {
     background-color: #e0e0e0; /* Fondo al pasar el ratón por encima */
 }
 
-/* Estilos para mostrar imágenes al pasar el mouse */
 .hover-image {
     position: relative; /* Necesario para posicionar la imagen correctamente */
 }
@@ -127,35 +129,36 @@ tbody tr:hover {
     display: block; /* Muestra la imagen al pasar el mouse */
 }
 
-/* --- Diseño responsivo para dispositivos móviles --- */
+/* --- Diseño responsivo para móviles --- */
 @media (max-width: 768px) {
     body {
         flex-direction: column; /* Cambia a disposición vertical en móviles */
     }
 
     nav {
-        width: 100%; /* Haz que el `nav` ocupe todo el ancho */
+        width: 100%; /* El nav ocupa todo el ancho */
         height: auto; /* Ajusta la altura automáticamente */
+        position: static; /* Vuelve a su posición normal */
         padding: 10px;
     }
 
-    nav ul li a {
-        font-size: 14px; /* Reduce el tamaño de la fuente */
+    .container {
+        margin-left: 0; /* Elimina el margen lateral */
+        width: 100%; /* El contenedor ocupa todo el ancho */
+        padding: 20px; /* Ajusta el padding */
     }
 
-    .container {
-        width: 90%; /* Ajusta el ancho del contenedor */
-        margin: 10px auto;
-        padding: 20px; /* Reduce el padding en móviles */
+    nav ul li a {
+        font-size: 14px; /* Ajusta el tamaño de la fuente */
     }
 
     h1, h2 {
-        font-size: 24px; /* Ajusta el tamaño de los encabezados */
+        font-size: 24px;
     }
 
     table {
-        display: block; /* Permite el desplazamiento horizontal */
-        overflow-x: auto; /* Habilita scroll horizontal */
-        white-space: nowrap; /* Evita el ajuste en líneas múltiples */
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
     }
 }
