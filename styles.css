@@ -163,10 +163,6 @@ tbody tr:hover {
     }
 }
 
-.image-container {
-    text-align: center; /* Centra la imagen horizontalmente */
-}
-
 .imagencontenedor {
     display: flex; /* Activar el uso de flexbox */
     justify-content: center; /* Centrar horizontalmente */
@@ -174,3 +170,9 @@ tbody tr:hover {
     width: 600px; /* Ancho del contenedor */
     height: 400px; /* Altura del contenedor */
 }
+
+.imagencontenedor img {
+    max-width: 100%; /* Ajusta el tamaño de la imagen al contenedor */
+    height: auto; /* Mantiene las proporciones de la imagen */
+}
+
