@@ -111,24 +111,25 @@ tbody tr:hover {
 
 /* --- Hover Image Styling --- */
 .hover-image {
-    position: relative; /* Posición relativa para el hover */
+    position: relative; /* Asegura que las imágenes estén posicionadas según el texto */
 }
 
 .hover-image img {
-    display: none; /* Oculta por defecto */
+    display: none; /* Oculta las imágenes por defecto */
     position: absolute; /* Posición encima del texto */
-    top: 50%; /* Centrar verticalmente */
-    left: 100%; /* Mostrar al lado derecho del texto */
-    transform: translate(-50%, -50%); /* Ajustar el centro de la imagen */
-    width: 200px; /* Tamaño de la imagen */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra */
+    top: 0; /* Ajusta la posición vertical */
+    left: 100%; /* Ubica la imagen al lado derecho del texto */
+    transform: translate(-50%, 0); /* Centra la imagen horizontalmente */
+    width: 100px; /* Establece un tamaño pequeño */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Agrega sombra para contraste */
     border-radius: 10px; /* Bordes redondeados */
     background-color: #fff; /* Fondo blanco */
 }
 
 .hover-image:hover img {
-    display: block; /* Mostrar imagen al pasar el ratón */
+    display: block; /* Muestra la imagen al pasar el cursor */
 }
+
 
 /* --- General Text Styling --- */
 h1, h2 {
