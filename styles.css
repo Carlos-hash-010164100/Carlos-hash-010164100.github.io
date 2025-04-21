@@ -110,24 +110,24 @@ tbody tr:hover {
 }
 /* --- Hover Image Styling para Dispositivos Internos --- */
 .hover-image {
-    position: relative; /* Las imágenes se posicionarán respecto al texto */
+    position: relative; /* Asegura que las imágenes estén posicionadas respecto al texto */
 }
 
 .hover-image img {
     display: none; /* Oculta las imágenes por defecto */
-    position: absolute; /* Posición absoluta para que aparezcan al lado */
+    position: absolute; /* Posiciona la imagen fuera del flujo del documento */
     top: 0; /* Ajusta la posición vertical */
     left: 100%; /* Ubica la imagen al lado derecho del texto */
-    transform: translate(-50%, 0); /* Centra la imagen horizontalmente */
+    transform: translate(-50%, 0); /* Ajusta la imagen para centrarla horizontalmente */
     width: 100px; /* Tamaño reducido de la imagen */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra para mejorar contraste */
-    border-radius: 10px; /* Bordes redondeados para estética */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Agrega sombra para mayor contraste */
+    border-radius: 10px; /* Bordes redondeados */
     background-color: #fff; /* Fondo blanco */
-    z-index: 10; /* Garantiza que aparezcan encima de otros elementos */
+    z-index: 10; /* Garantiza que las imágenes estén visibles sobre otros elementos */
 }
 
 .hover-image:hover img {
-    display: block; /* Muestra la imagen al pasar el cursor */
+    display: block; /* Muestra la imagen al pasar el cursor por encima */
 }
 
 
