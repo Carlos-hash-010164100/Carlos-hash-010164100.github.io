@@ -1,53 +1,52 @@
 /* --- General Body Styling --- */
 body {
     display: flex;
-    flex-direction: row; /* Ajuste para distribuir nav y contenido horizontalmente */
+    flex-direction: row; /* Distribuye nav y contenido horizontalmente */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    background: #215086ce;
+    background: #215086ce; /* Fondo principal */
 }
 
 /* --- Navigation Styling --- */
 nav {
-    width: 130px;
-    background-color: #607D8B;
-    height: 100vh;
+    width: 130px; /* Ancho fijo del menú */
+    background-color: #607D8B; /* Azul grisáceo */
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
     padding: 20px;
-    position: fixed;
+    position: fixed; /* Fijo a la izquierda */
     top: 0;
     left: 0;
-    overflow-y: auto; /* Maneja contenido largo en el nav */
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
+    list-style-type: none; /* Elimina viñetas */
+    padding: 0; /* Elimina padding */
 }
 
 nav ul li {
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Separación entre elementos */
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
+    color: white; /* Texto blanco */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Negrita */
+    font-size: 18px; /* Tamaño del texto */
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Subrayado al pasar el ratón */
 }
 
 /* --- Main Container Styling --- */
 .container {
-    margin-left: 150px; /* Espacio para el nav fijo */
-    background: #fff;
-    padding: 50px;
-    border-radius: 20px;
-    box-shadow: 0 15px 30px rgba(5, 0, 0, 0.1);
-    max-width: 1400px;
-    overflow-y: auto;
+    margin-left: 150px; /* Espacio para el menú fijo */
+    background: #fff; /* Fondo blanco */
+    padding: 50px; /* Espaciado interno */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 15px 30px rgba(5, 0, 0, 0.1); /* Sombra */
+    max-width: 1400px; /* Ancho máximo */
+    overflow-y: auto; /* Scroll si el contenido es largo */
 }
 
 /* --- Section Styling --- */
@@ -56,92 +55,115 @@ section {
 }
 
 section h2 {
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Espacio entre título y contenido */
 }
 
 /* --- Image Container Styling --- */
 .imagencontenedor {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px auto;
-    max-width: 600px;
-    max-height: 400px;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    background-color: #fff;
+    display: flex; /* Activar flexbox */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    margin: 20px auto; /* Centrado automático */
+    max-width: 600px; /* Ancho máximo */
+    max-height: 400px; /* Altura máxima */
+    overflow: hidden; /* Esconder contenido desbordado */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombra */
+    background-color: #fff; /* Fondo blanco */
 }
 
 .imagencontenedor img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* --- General Text Styling --- */
-h1, h2 {
-    text-align: center;
-    color: #333;
-}
-
-p {
-    font-size: 1.2em;
-    color: #555;
+    max-width: 100%; /* Escalar al ancho del contenedor */
+    height: auto; /* Mantener proporciones */
+    display: block; /* Asegura que sea un bloque */
 }
 
 /* --- Table Styling --- */
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    background-color: #fff;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Agrega sombra */
+    width: 100%; /* Ancho completo */
+    border-collapse: collapse; /* Elimina espacios entre celdas */
+    margin: 20px 0; /* Espaciado superior e inferior */
+    background-color: #fff; /* Fondo blanco */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra */
     border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden;
 }
 
 th, td {
-    border: 1px solid #ddd;
-    padding: 10px;
+    border: 1px solid #ddd; /* Bordes suaves */
+    padding: 10px; /* Espaciado interno */
+    text-align: left; /* Texto alineado a la izquierda */
 }
 
 th {
-    background-color: #607D8B;
-    color: white;
-    font-weight: bold;
+    background-color: #607D8B; /* Azul grisáceo */
+    color: white; /* Texto blanco */
+    font-weight: bold; /* Texto en negrita */
 }
 
 tbody tr:nth-child(even) {
-    background-color: #f5f5f5;
+    background-color: #f5f5f5; /* Fondo para filas pares */
 }
 
 tbody tr:hover {
-    background-color: #e0e0e0;
+    background-color: #e0e0e0; /* Fondo al pasar el ratón */
+}
+
+/* --- Hover Image Styling --- */
+.hover-image {
+    position: relative; /* Posición relativa para el hover */
+}
+
+.hover-image img {
+    display: none; /* Oculta por defecto */
+    position: absolute; /* Posición encima del texto */
+    top: 50%; /* Centrar verticalmente */
+    left: 100%; /* Mostrar al lado derecho del texto */
+    transform: translate(-50%, -50%); /* Ajustar el centro de la imagen */
+    width: 200px; /* Tamaño de la imagen */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra */
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: #fff; /* Fondo blanco */
+}
+
+.hover-image:hover img {
+    display: block; /* Mostrar imagen al pasar el ratón */
+}
+
+/* --- General Text Styling --- */
+h1, h2 {
+    text-align: center; /* Texto centrado */
+    color: #333; /* Gris oscuro */
+}
+
+p {
+    font-size: 1.2em; /* Tamaño del texto */
+    color: #555; /* Gris medio */
 }
 
 /* --- Responsive Design --- */
 @media (max-width: 768px) {
     body {
-        flex-direction: column; /* Cambia a disposición vertical en móviles */
+        flex-direction: column; /* Apilar elementos verticalmente */
     }
 
     nav {
-        width: 100%;
-        height: auto;
-        position: static;
+        width: 100%; /* Ancho completo */
+        height: auto; /* Altura automática */
+        position: static; /* Posición normal */
         padding: 10px;
     }
 
     .container {
-        margin-left: 0;
-        width: 100%;
-        padding: 20px;
+        margin-left: 0; /* Elimina margen izquierdo */
+        width: 100%; /* Ancho completo */
+        padding: 20px; /* Espaciado interno */
     }
 
     table {
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
+        display: block; /* Tabla apilada */
+        overflow-x: auto; /* Scroll horizontal si es necesario */
+        white-space: nowrap; /* Evita ajuste de líneas */
     }
 }
 
